@@ -1,6 +1,6 @@
 # Projeto Calculadora LabSeq- Dellent Exercicio 2023
 
-Este projeto consiste em uma calculadora que calcula os valores da sequência LabSeq através do valor fornecido usando uma  web GUI.
+Este projeto consiste numa calculadora que calcula os valores da sequência LabSeq através do valor fornecido usando uma  web GUI.
 
 ## Requisitos e Ferramentas
 
