@@ -24,7 +24,7 @@ Se tiver o IDE instalado
 Nota: Caso não consiga usar diretamente o projeto pela interface use http://localhost:8080/labseq/n substituindo o n pelo número desejado, caso use um número negativo ira surgir uma mensagem avisar que não é possivel.
 
 Documentação da API
-Acesse a documentação da API em: http://localhost:8080/q/swagger-ui/
+Abra a documentação da API em: http://localhost:8080/q/swagger-ui/
 
 
 Guias usados para este projeto:
