@@ -13,9 +13,8 @@ Este projeto consiste em uma calculadora que calcula os valores da sequência La
 ## Configuração
 
 1. Faça download do projeto através do repositorio do github:
-	https://github.com/seu-usuario/nome-do-repositorio.git
-
-Se tiver o IDE
+	https://github.com/edgarsousacosta22/Dellent_exercicio_labseq
+Se tiver o IDE instalado
 2. Abra o Projeto Quarkus no IDE
 3.Execute o servidor Quarkus no IDE (já deve conseguir abrir e testar pelo http://localhost:8080/labseq/n)
 4. Projeto Angular através da linha de comandos abra o projeto na pasta do projeto angular "cd labseqDellent_Angular" e posteriormente execute o  seguinte comando "ng serve"
