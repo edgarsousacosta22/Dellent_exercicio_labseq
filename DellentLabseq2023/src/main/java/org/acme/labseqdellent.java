@@ -19,13 +19,13 @@ public class labseqdellent {
         if (n < 0) {
             return "O valor de 'n' não pode ser negativo. Por favor, altere o valor.";
         }
-        long startTime = System.currentTimeMillis();
-        int result = calcularSeq(n);
-        long endTime = System.currentTimeMillis();
-        long elapsedTime = endTime - startTime;
+        long start = System.currentTimeMillis();
+        int resultado = calcularSeq(n);
+        long end = System.currentTimeMillis();
+        long tempo = end - start;
 
-        if (elapsedTime < 10000) {
-            return String.valueOf(result);
+        if (tempo < 10000) {
+            return String.valueOf(resultado);
         } else {
             return "O cálculo de l(10000) demorou mais de 10 segundos.";
         }
@@ -33,10 +33,10 @@ public class labseqdellent {
 
     @CacheResult(cacheName = SEQUENCE_CACHE)
     public int calcularSeq(int n) {
-        return calcularSeqHelper(n, new int[n + 1]);
+        return calcularSeqC(n, new int[n + 1]);
     }
-
-    private int calcularSeqHelper(int n, int[] cache) {
+    // Função auxiliar usando cache
+    private int calcularSeqC(int n, int[] cache) {
         if (n == 0) {
             return 0;
         } else if (n == 1) {
@@ -50,9 +50,9 @@ public class labseqdellent {
         if (cache[n] != 0) {
             return cache[n];
         }
-
-        int result = calcularSeqHelper(n - 4, cache) + calcularSeqHelper(n - 3, cache);
-        cache[n] = result;
-        return result;
+        // Calcula o valor usando resultados em cache
+        int resultado = calcularSeqC(n - 4, cache) + calcularSeqC(n - 3, cache);
+        cache[n] = resultado;
+        return resultado;
     }
 }
